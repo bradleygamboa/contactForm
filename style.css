@@ -1,6 +1,6 @@
 @font-face {
   font-family: titleFont;
-  src: url(continuo.ttf);
+  src: url(./fonts/continuo.ttf);
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 aside {
   border-radius: 3px;
-  color: white;
+  color: black;
   margin-bottom: 2em;
   padding: 0.3em 1em;
 }
@@ -25,7 +25,7 @@ button {
 }
 
 h1 {
-  color: white;
+  color: black;
   font-family: titleFont;
   font-size: 50px;
 }
