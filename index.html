@@ -2,58 +2,70 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="contact form example">
-    <title>Contact Form Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
 </head>
 
-<body>
-    <h2 class="content-head is-center">Vinyl Beauty Studio - RGV!</h2>
-    <aside>
-        <p class="is-center">
-            We would <em>love</em> for you to book your next appointment with us! </p>
-        <p class="is-center">Please use this <b><em>Contact Form</em></b> to send us a message.
-        </p>
-    </aside>
-    <!-- START HERE -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <!-- Style The Contact Form How Ever You Prefer -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxjmzBBmBCalMW6tkr7TNNyuUPPear3foBjH8aV2jZVrWgLE3HM/exec">
-        <!-- change the form action to your script url -->
-        <fieldset class="pure-group pure-input-1-3">
-            <label for="name">Name: </label>
-            <input id="name" name="name" placeholder="Your name..." required/>
-        </fieldset> 
-        <fieldset class="pure-group pure-input-1-3">
-            <label for="message">Message: </label>
-            <textarea id="message" name="message" rows="10" placeholder="Your lovely message here..." required></textarea>
-        </fieldset>
-        <fieldset class="pure-group pure-input-1-3">
-            <label for="email">Email:</label>
-            <input id="email" name="email" type="email" value="" required placeholder="your.name@gmail.com" required/>
-            <span id="email-invalid" style="display:none">
+<!-- Body with background image -->
+<!-- <body style="background-color: pink; background: url(http://www.bradleygamboa.me/img/vinyl.png) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;"> -->
+
+<!-- Body without background image -->
+
+<body style="background-color: pink;">
+
+  <h1 class="content-head is-center">Vinyl Beauty Studio - RGV!</h1>
+  <aside style="background-color: pink; color: black;">
+    <p class="is-center">
+      We would <em>love</em> for you to book your next appointment with us! </p>
+    <p class="is-center">Please use this <b><em>Contact Form</em></b> to send us a message.
+    </p>
+  </aside>
+
+  <!-- START HERE -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Style The Contact Form How Ever You Prefer -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxjmzBBmBCalMW6tkr7TNNyuUPPear3foBjH8aV2jZVrWgLE3HM/exec">
+
+    <!-- change the form action to your script url -->
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="The name your momma gave ya..." required/>
+    </fieldset>
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10" placeholder="Your lovely message here..." required></textarea>
+    </fieldset>
+    <fieldset class="pure-group">
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" value="" required placeholder="your.name@gmail.com" required/>
+      <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
-        </fieldset>
-        <fieldset class="pure-group pure-input-1-3">
-            <label for="color">Phone: </label>
-            <input id="color" name="color" placeholder="xxx-xxx-xxxx" required/>
-        </fieldset>
-        <button class="button-success pure-button button-xlarge">
+    </fieldset>
+    <fieldset class="pure-group">
+      <label for="color">Phone: </label>
+      <input id="color" name="color" placeholder="xxx-xxx-xxxx" required/>
+    </fieldset>
+    <button style="background-color: white; color: black;" class="button-success pure-button button-xlarge">
             <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-    </form>
-    <!-- Customise the Thankyou Message People See when they submit the form: -->
-    <div style="display:none;" id="thankyou_message">
-        <h2><em>Thanks</em> for contacting us!
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div class="is-center" style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
       We will get back to you soon!</h2>
-    </div>
-    <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-    <!-- <script data-cfasync="false" type="text/javascript"
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+  <!-- <script data-cfasync="false" type="text/javascript"
   src="/form-submission-handler.js"></script> -->
-    <!-- END -->
+  <!-- END -->
 </body>
 
 </html>
