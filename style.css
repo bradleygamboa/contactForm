@@ -3,6 +3,10 @@
   src: url(./fonts/continuo.ttf);
 }
 
+html {
+  background-color: #fedddc;
+}
+
 body {
   margin: 2em;
   background-color: pink;
