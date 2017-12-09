@@ -3,19 +3,21 @@
   src: url(./fonts/continuo.ttf);
 }
 
-html {
+html, body {
   background-color: #fedddc;
   background: url(http://www.bradleygamboa.me/img/vinyl.png) no-repeat center center fixed;
+  margin: 2em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-body {
+
+/*body {
   margin: 2em;
   background: none;
-}
+}*/
 
 aside {
   border-radius: 3px;
