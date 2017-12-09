@@ -9,12 +9,18 @@ body {
 }
 
 aside {
-  background: #1f8dd6;
-  /* same color as selected state on site menu */
-  padding: 0.3em 1em;
   border-radius: 3px;
-  color: #fff;
+  color: white;
   margin-bottom: 2em;
+  padding: 0.3em 1em;
+}
+
+button {
+  float: right;
+}
+
+h1 {
+  color: white;
 }
 
 textarea {
@@ -42,10 +48,6 @@ textarea {
 
 .button-xlarge {
   font-size: 125%;
-}
-
-button {
-  float: right;
 }
 
 #name, #email, #message {
