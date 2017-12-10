@@ -13,7 +13,6 @@ html, body {
   background-size: cover;
 }
 
-
 /*body {
   margin: 2em;
   background: none;
@@ -33,7 +32,16 @@ button {
 h1 {
   color: black;
   font-family: titleFont;
-  font-size: 50px;
+  font-size: 5em;
+}
+
+label, input, textarea {
+  font-family: titleFont;
+}
+
+p {
+  font-family: titleFont;
+  font-size: 1.5em;
 }
 
 textarea {
