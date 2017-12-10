@@ -5,7 +5,7 @@
 
 html, body {
   background-color: #fedddc;
-  background: url(https://www.bradleygamboa.me/img/vinyl.png) no-repeat center center fixed;
+  background: url(./img/vinyl.png) no-repeat center center fixed;
   margin: 2em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
