@@ -44,11 +44,6 @@ p {
   font-size: 1.5em;
 }
 
-.font-reduced {
-  font-family: titleFont;
-  font-size: 1em;
-}
-
 textarea {
   width: 100%;
 }
@@ -58,6 +53,11 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 2em 0 1em;
+}
+
+.font-reduced {
+  font-family: titleFont;
+  font-size: 1em;
 }
 
 .is-center {
@@ -78,4 +78,72 @@ textarea {
 
 #name, #email, #message {
   width: 50%;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #name, #email, #message {
+    width: 100%;
+  }
+  h1 {
+    color: black;
+    font-family: titleFont;
+    font-size: 4em;
+  }
+  p {
+    font-family: titleFont;
+    font-size: 1.25em;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  #name, #email, #message {
+    width: 100%;
+  }
+  h1 {
+    color: black;
+    font-family: titleFont;
+    font-size: 4em;
+  }
+  p {
+    font-family: titleFont;
+    font-size: 1.25em;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #name, #email, #message {
+    width: 85%;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  #name, #email, #message {
+    width: 75%;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #name, #email, #message {
+    width: 85%;
+  }
 }
