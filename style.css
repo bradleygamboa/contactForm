@@ -44,6 +44,11 @@ p {
   font-size: 1.5em;
 }
 
+.font-reduced {
+  font-family: titleFont;
+  font-size: 1em;
+}
+
 textarea {
   width: 100%;
 }
